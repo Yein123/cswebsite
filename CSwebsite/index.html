@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/icon32x32.png">
+        <link rel="stylesheet" href="functionGlider/glider.css">
+        <script src="functionGlider/glider.js"></script>
+        <title>Merchandise | CS Society USM</title>
+        <link rel="stylesheet" href="cartProperties/cart.css"/>
+        <meta name="generator" content="Astro v2.2.3">
+        
+    </head>
+    <body>
+        <div id="navbar" class="navbar min-h-[6rem] px-6 md:px-12 fixed z-30 bg-theme-800 text-white transition-all" style="top: 0px">
+            <div class="navbar-start">
+                <a href="/" class="text-xl py-2 h-fit">
+                <div class="flex items-center justify-center gap-4">
+                    <img src="assets/cs_icon.png" width="64" height="64" class="w-16 -z-10 block">
+                    <div class="font-logo text-left font-normal tracking-wider text-xl -z-10">
+                        <div class="leading-snug">USM CS Society</div>
+                        <div class="leading-none">Merchandise</div>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="navbar-end">
+                <ul class="menu menu-horizontal p-0 flex gap-x-3">
+                    <a href="https://merch.cssocietyusm.com/cart/" class="btn btn-secondary shadow">
+                    <svg viewBox="0 0 24 24" class="w-6 mr-1" astro-icon="mdi:cart"><path fill="currentColor" d="M17 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2M1 2v2h2l3.6 7.59-1.36 2.45c-.15.28-.24.61-.24.96a2 2 0 0 0 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25c0-.05.01-.09.03-.12L8.1 13h7.45c.75 0 1.41-.42 1.75-1.03l3.58-6.47c.07-.16.12-.33.12-.5a1 1 0 0 0-1-1H5.21l-.94-2M7 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2z" /></svg> 
+                    cart</a>
+                </ul>
+            </div>
+        </div>
+        <div class="py-16"></div>
+        <div class="mx-4">
+            <div class="alert alert-error shadow-lg mx-auto max-w-lg mb-8">
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current flex-shrink-0 h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <span>We are <b>not accepting new orders</b> at this time.<br>Thank you
+            for your support!</span>
+            </div>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-8">
+        <div class="flex flex-wrap lg:flex-nowrap justify-center lg:justify-between gap-x-8 gap-y-3 mb-6">
+        <div class>
+        <p class="font-bold text-3xl">
+        Don't miss out on the one and only CS Society Merch.
+        </p>
+
+        <p class="text-lg my-1">
+        Your final chance to grab our limited merchandise!✨
+        </p>
+        </div>
+
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto">
+            <product-item class="card shadow-lg bg-gray-50">
+                <div class="pt-4 px-4">
+                    <div>
+                    <div class="glider">
+                        <div>
+                            <img id="myImage1" src="assets/tshirt-ss-front.webp" height="256px" class="h-80 w-full mx-auto object-contain draggable" alt="Merch">
+                        </div>
+                        <div>
+                            <img id="myImage1" src="assets/tshirt-ss-back.webp" height="256px" class="h-80 w-full mx-auto object-contain draggable" alt="Merch">
+                        </div>
+                    </div>
+                    <div role="tablist" class="mt-2 dot-container">
+                        <div style="text-align:center;">
+                            <span class="dot" onclick="changeImage('myImage1','assets/tshirt-ss-front.webp'); changeColor(this);"></span></span>
+                            
+                            <span class="dot" onclick="changeImage('myImage1','assets/tshirt-ss-back.webp'); changeColor(this);"></span></span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title">T-Shirt Short Sleeve</h2>
+                    <p class="card-subtitle">RM26.00</p>
+                    <p class="card-text">
+                        The royal blue microfibre shirt is comfy and stylish at the same time.
+                    </p>
+                    <p class="code hidden">TSS</p>
+                    <div class="flex flex-wrap justify-center mx-auto items-center gap-3 mt-3 cursor-not-allowed">
+                        <button class="btn btn-primary text-slate-50" disabled><svg viewBox="0 0 24 24" class="w-6 mr-1" astro-icon="mdi:cancel"><path fill="currentColor" d="M12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2m0 2c-1.9 0-3.6.6-4.9 1.7l11.2 11.2c1-1.4 1.7-3.1 1.7-4.9 0-4.4-3.6-8-8-8m4.9 14.3L5.7 7.1C4.6 8.4 4 10.1 4 12c0 4.4 3.6 8 8 8 1.9 0 3.6-.6 4.9-1.7z" /></svg> Unavailable</button>
+                    </div>
+                </div>
+            </product-item>
+            <product-item class="card shadow-lg bg-gray-50">
+                <div class="pt-4 px-4">
+                <div>
+                <div class="glider-contain">
+                <div>
+                <img id="myImage2" src="assets/tshirt-ls-front.webp" height="256px" class="h-80 w-full mx-auto object-contain" alt="Merch">
+                </div><div>
+                <img id="myImage2" src="assets/tshirt-ls-back.webp" height="256px" class="h-80 w-full mx-auto object-contain" alt="Merch">
+                </div>
+                </div>
+                <div role="tablist" class="mt-2 dot-container">
+                    <div style="text-align:center;">
+                        <span class="dot" onclick="changeImage('myImage2','assets/tshirt-ls-front.webp'); changeColor(this);"></span></span>
+                        
+                        <span class="dot" onclick="changeImage('myImage2','assets/tshirt-ls-back.webp'); changeColor(this);"></span></span>
+                    </div>
+                </div>
+                </div>
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title">T-Shirt Long Sleeve</h2>
+                    <p class="card-subtitle">RM26.00</p>
+                    <p class="card-text">
+                        The royal blue microfibre shirt is comfy and stylish at the same time.
+                    </p>
+                    <p class="code hidden">TLS</p>
+                    <div class="flex flex-wrap justify-center mx-auto items-center gap-3 mt-3 cursor-not-allowed">
+                        <button class="btn btn-primary text-slate-50" disabled><svg viewBox="0 0 24 24" class="w-6 mr-1" astro-icon="mdi:cancel"><path fill="currentColor" d="M12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2m0 2c-1.9 0-3.6.6-4.9 1.7l11.2 11.2c1-1.4 1.7-3.1 1.7-4.9 0-4.4-3.6-8-8-8m4.9 14.3L5.7 7.1C4.6 8.4 4 10.1 4 12c0 4.4 3.6 8 8 8 1.9 0 3.6-.6 4.9-1.7z" /></svg> Unavailable</button>
+                    </div>
+                </div>
+            </product-item>
+            <product-item class="card shadow-lg bg-gray-50">
+                <div class="pt-4 px-4">
+                    <div>
+                        <div class="glider-simple">
+                            <div>
+                            <img id="myImage3" src="assets/hoodie-front.webp" height="256px" class="h-80 w-full mx-auto object-contain" alt="Merch">
+                            </div>
+                            <div>
+                                <img id="myImage3" src="assets/hoodie-back.webp" height="256px" class="h-80 w-full mx-auto object-contain" alt="Merch">
+                            </div>
+                        </div>
+                        <div role="tablist" class="mt-2 dot-container">
+                            <div style="text-align:center;">
+                                <span class="dot" onclick="changeImage('myImage3','assets/hoodie-front.webp'); changeColor(this);"></span></span>
+                                
+                                <span class="dot" onclick="changeImage('myImage3','assets/hoodie-back.webp'); changeColor(this);"></span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title">Hoodie</h2>
+                    <p class="card-subtitle">RM55.00</p>
+                    <p class="card-text">
+                    Make your presence known with this zip-up hoodie.
+                    </p>
+                    <p class="code hidden">H</p>
+                    <div class="flex flex-wrap justify-center mx-auto items-center gap-3 mt-3 cursor-not-allowed">
+                        <button class="btn btn-primary text-slate-50" disabled><svg viewBox="0 0 24 24" class="w-6 mr-1" astro-icon="mdi:cancel"><path fill="currentColor" d="M12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2m0 2c-1.9 0-3.6.6-4.9 1.7l11.2 11.2c1-1.4 1.7-3.1 1.7-4.9 0-4.4-3.6-8-8-8m4.9 14.3L5.7 7.1C4.6 8.4 4 10.1 4 12c0 4.4 3.6 8 8 8 1.9 0 3.6-.6 4.9-1.7z" /></svg> Unavailable</button>
+                    </div>
+                </div>
+            </product-item>
+            <product-item class="card shadow-lg bg-gray-50">
+                <div class="pt-4 px-4">
+                    <img src="assets/cap.webp" height="256px" class="h-80 mx-auto p-12 object-contain" alt="Merchandise">
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title">Cap</h2>
+                    <p class="card-subtitle">RM20.00</p>
+                    <p class="card-text">
+                        With a cute but cool little penguin on top, this cotton cap is sure to keep you cool as well on a sunny day.
+                    </p>
+                    <p class="code hidden">C</p>
+                    <div class="flex flex-wrap justify-center mx-auto items-center gap-3 mt-3 cursor-not-allowed">
+                        <button class="btn btn-primary text-slate-50" disabled><svg viewBox="0 0 24 24" class="w-6 mr-1" astro-icon="mdi:cancel"><path fill="currentColor" d="M12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2m0 2c-1.9 0-3.6.6-4.9 1.7l11.2 11.2c1-1.4 1.7-3.1 1.7-4.9 0-4.4-3.6-8-8-8m4.9 14.3L5.7 7.1C4.6 8.4 4 10.1 4 12c0 4.4 3.6 8 8 8 1.9 0 3.6-.6 4.9-1.7z" /></svg> Unavailable</button>
+                    </div>
+                </div>
+            </product-item>
+            <product-item class="card shadow-lg bg-gray-50">
+                <div class="pt-4 px-4">
+                    <img src="assets/tote-bag.webp" height="256px" class="h-80 mx-auto object-contain" alt="Merchandise">
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title">Canvas Bag</h2>
+                    <p class="card-subtitle">RM18.00</p>
+                    <p class="card-text">
+                        This canvas bag is perfect for you to show off that you&#39;re a computer science student while carrying your daily essentials around.
+                    </p>
+                    <p class="code hidden">CB</p>
+                    <div class="flex flex-wrap justify-center mx-auto items-center gap-3 mt-3 cursor-not-allowed">
+                        <button class="btn btn-primary text-slate-50" disabled><svg viewBox="0 0 24 24" class="w-6 mr-1" astro-icon="mdi:cancel"><path fill="currentColor" d="M12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2m0 2c-1.9 0-3.6.6-4.9 1.7l11.2 11.2c1-1.4 1.7-3.1 1.7-4.9 0-4.4-3.6-8-8-8m4.9 14.3L5.7 7.1C4.6 8.4 4 10.1 4 12c0 4.4 3.6 8 8 8 1.9 0 3.6-.6 4.9-1.7z" /></svg> Unavailable</button>
+                    </div>
+                </div>
+            </product-item>
+        </div>
+        </div>
+        <p class="mt-6 mx-8 italic opacity-60 text-sm text-center">
+        ** All pictures shown are for illustration purposes only. Actual product
+        may vary due to product enhancement.
+        </p>
+        <div class="py-8"></div>
+        <footer class="footer items-center p-4 bg-theme-900 text-base-100 gap-y-4">
+            <div class="items-center grid-flow-col">
+                <p class="pl-1">Copyright © 2022 - 2023 Computer Science Society, USM</p>
+            </div>
+            <div class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+                <a href="https://cssocietyusm.com" target="_blank">
+                    <img src="assets/webicon.png" width="24" height="24" viewBox="0 0 512 512" class="fill-current">
+                </a>
+                <a href="https://www.instagram.com/cs.usm/" target="_blank">
+                    <img src="assets/instaicon.png" width="24" height="24" viewBox="0 0 448 512" class="fill-current">
+                </a>
+                <a href="https://www.linkedin.com/company/cssocietyusm/" target="_blank">
+                    <img src="assets/linkedinicon.png" width="24" height="24" viewBox="0 0 448 512" class="fill-current">
+                </a>
+                <a href="https://www.facebook.com/cs.usm.my/" target="_blank">
+
+                    <img src="assets/fbicon.png" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+                </a>
+            </div>
+        </footer>
+        <script src="functionGlider/glider.js"></script>
+        <script>
+            new Glider(document.querySelector('.glider'),{
+                slidesToShow:1,
+                dots:'dots',
+                draggable:true,
+            });
+        </script>
+        <script>
+            new Glider(document.querySelector('.glider-contain'),{
+                slidesToShow:1,
+                draggable:true,
+            });
+        </script>
+        <script>
+            new Glider(document.querySelector('.glider-simple'),{
+                slidesToShow:1,
+                draggable:true,
+            });
+        </script>
+        <script>
+            function changeImage(imageId, imagePath) {
+                document.getElementById(imageId).src = imagePath;
+            }
+            
+            function changeColor(dot) {
+            
+              // Get all dots
+            var dots = document.getElementsByClassName('dot');
+            
+              // Reset color of all dots
+            for (var i = 0; i < dots.length; i++) {
+                dots[i].style.backgroundColor = "#bbb";
+            }
+            
+              // Change color of clicked dot
+            dot.style.backgroundColor = "#111";
+            }
+            </script>
+    </body>
+</html>
